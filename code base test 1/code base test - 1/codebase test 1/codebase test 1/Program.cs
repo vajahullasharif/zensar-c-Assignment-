@@ -7,6 +7,12 @@ using System.Threading.Tasks;
 namespace codebase_test_1
 
 {
+    public class TicketsException : Exception
+    {
+        public TicketsException(string message) : base(message)
+        {
+        }
+    }
     class Passenger
     {
         string name;
@@ -32,13 +38,6 @@ namespace codebase_test_1
             }
         }
 
-public class TicketsException : Exception
-        {
-            public TicketsException(string message) : base(message)
-            {
-            }
-        }
-
         public static void Main()
         {
             int no_tickets;
@@ -46,6 +45,7 @@ public class TicketsException : Exception
             Console.WriteLine(no_tickets);
             Passenger pass = new Passenger("Vajahulla", "5-05-2022", 22);
             pass.TicketBooking(no_tickets);
+            
         }
     }
 }
