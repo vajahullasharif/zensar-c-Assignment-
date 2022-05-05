@@ -20,7 +20,7 @@ namespace Assignmnet5
             int Amount = 30000;
             static String Bank_name = "ICICI";
             static public int Total_balance;
-            String Account_holder = "Sharif;
+            String Account_holder = "Sharif";
             String Account_number;
             public void Depositamount()
             {
